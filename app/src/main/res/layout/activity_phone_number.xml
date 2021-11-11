@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Baate_Activities.PhoneNumberActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.055"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/talk" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Verify Phone Number"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/lottieAnimationView"
+        app:layout_constraintHorizontal_bias="0.645"
+        app:layout_constraintStart_toStartOf="@+id/lottieAnimationView"
+        app:layout_constraintTop_toBottomOf="@+id/lottieAnimationView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Enter your phone number here."
+        android:textColor="#827D7D"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Select your Country / Region Phone Code"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <com.hbb20.CountryCodePicker
+        android:id="@+id/ccp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="92dp"
+        app:ccp_countryPreference="IN,Lk,BD"
+        app:ccp_autoDetectCountry="true"
+        app:ccpDialog_fastScroller_handleColor="@color/Appthemecolor"
+        app:ccpDialog_fastScroller_bubbleColor="@color/Appthemecolor"
+        app:ccp_excludedCountries=""
+        android:layout_marginEnd="32dp"
+        app:ccpDialog_backgroundColor="@color/white"
+        app:ccpDialog_cornerRadius="@dimen/_20sdp"
+        app:ccpDialog_showCloseIcon="true"
+        app:ccpDialog_showFastScroller="true"
+        app:ccpDialog_showTitle="true"
+        app:ccp_showFlag="true"
+        app:ccp_showFullName="true"
+        app:ccp_showNameCode="true"
+        app:ccp_showPhoneCode="true"
+        app:ccp_useFlagEmoji="true"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+    </com.hbb20.CountryCodePicker>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textinputlayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Phone Number"
+        android:textAlignment="center"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/ccp"
+        app:layout_constraintStart_toStartOf="@+id/ccp"
+        app:layout_constraintTop_toBottomOf="@+id/ccp"
+        app:startIconDrawable="@android:drawable/stat_sys_phone_call"
+        app:startIconTint="#000000">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phonetext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:padding="15dp"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/verifybtn"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/onboarding_indicator_active"
+        android:fontFamily="sans-serif"
+        android:text="Verify"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textinputlayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

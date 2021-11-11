@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.binary2.baate">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Baate">
+        <activity android:name=".Baate_Activities.Intent_for_media"></activity>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/baate_logo" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/Appthemecolor" />
+
+        <activity
+            android:name=".Baate_Activities.CallsActivity"
+            android:theme="@style/Theme.BaateActionBar" />
+        <activity
+            android:name=".Baate_Activities.PeoplesActivity"
+            android:theme="@style/Theme.BaateActionBar" />
+        <activity
+            android:name=".Baate_Activities.MomentsActivity"
+            android:theme="@style/Theme.BaateActionBar" />
+        <activity
+            android:name=".Baate_Activities.MainActivity"
+            android:theme="@style/Theme.BaateActionBar" />
+        <activity android:name=".Baate_Activities.SetupProfileActivity" />
+        <activity android:name=".Baate_Activities.ChatActivity" />
+        <activity android:name=".Baate_Activities.OtpActivity" />
+        <activity android:name=".Baate_Activities.PhoneNumberActivity" />
+        <activity
+            android:name=".Baate_Activities.OnboardingActivity"
+            android:theme="@style/Theme.Baate" />
+        <activity
+            android:name=".Baate_Activities.SplashActivity"
+            android:theme="@style/Theme.Baate">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".Baate_Services.FirebaseServices"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

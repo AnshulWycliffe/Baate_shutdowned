@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/chat_back_menu"
+        android:title="Chat Background" >
+        <menu >
+            <item android:title="Default"
+                android:id="@+id/defaultbac"/>
+            <item
+                android:id="@+id/back1_menu_chat"
+                android:title="PreLoaded 1" />
+            <item
+                android:id="@+id/back2_menu_chat"
+                android:title="PreLoaded 2" />
+            <item
+                android:id="@+id/back3_menu_chat"
+                android:title="PreLoaded 3" />
+            <item
+                android:id="@+id/back4_menu_chat"
+                android:title="PreLoaded 4" />
+            <item
+                android:id="@+id/gallery"
+                android:title="Choose From Gallery" />
+        </menu>
+    </item>
+    <item android:title="Item" />
+    <item android:title="Item" />
+    <item android:title="Item" />
+</menu>

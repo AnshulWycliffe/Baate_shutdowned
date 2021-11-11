@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "487337794360",
+    "project_id": "baate-ce074",
+    "storage_bucket": "baate-ce074.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:487337794360:android:fb9cf5e95c4f05869d3fcd",
+        "android_client_info": {
+          "package_name": "com.binary2.baate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "487337794360-fe8ahadevh1e9vpc1tj6t37mu8mlbb2u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.binary2.baate",
+            "certificate_hash": "e74b12388c766b02ad5763bd8cb63cc25a685ce9"
+          }
+        },
+        {
+          "client_id": "487337794360-1c93q4pvc2e8ia1dr88b28s4drtbj1ps.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKb_e2pSFvVO0v-u2a3zbDSH0Jt32i2rs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "487337794360-1c93q4pvc2e8ia1dr88b28s4drtbj1ps.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
